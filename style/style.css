@@ -65,12 +65,12 @@ color: var(--Gray );
   justify-content: center;
 }
 
-.social-media {
+/*.social-media {
   display: flex;
   justify-content: space-around;
   padding-left: 50rem;
   padding-right: 50rem;
-}
+} */
 
 .about {
   text-align: center;
@@ -162,3 +162,77 @@ color: var(--Gray );
     transform: rotate(360deg);
   }
 }
+
+/*Efecto De Iconos*/
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+
+.btn {
+  width: 100px;
+  height: 100px;
+  background-color: var(--Dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2em;
+  margin-right: 1em;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 10px;
+  z-index: 51;
+}
+
+i.fa
+{
+    font-size: 44px;
+}
+#ln
+{
+    color: #006fff;
+    text-shadow: 0 0 30px #006fff;
+}
+#ig
+{
+    color: #ff5f40;
+    text-shadow: 0 0 30px #ff5f40;
+}
+#tw
+{
+    color: #00acff;
+    text-shadow: 0 0 30px #00acff;
+}
+.btn.ln-btn
+{
+    box-shadow: 0 20px 20px -17px rgba(0,111,255,0.53);
+}
+.btn.ln-btn:hover
+{
+    transform: scale(1.2);
+    box-shadow: 0 30px 45px -15px rgba(0,111,255,0.65);
+}
+.btn.ig-btn
+{
+    box-shadow: 0 20px 20px -17px rgba(255,16,39,0.5);
+}
+.btn.ig-btn:hover
+{
+    transform: scale(1.2);
+    box-shadow: 0 30px 45px -15px rgba(255,16,39,0.57);
+}
+.btn.tw-btn
+{
+    box-shadow: 0 20px 20px -17px rgba(0,255,255,0.53);
+}
+.btn.tw-btn:hover
+{
+    transform: scale(1.2);
+    box-shadow: 0 30px 45px -15px rgba(0,111,255,0.6);
+}
+
+    
