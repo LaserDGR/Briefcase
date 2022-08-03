@@ -75,6 +75,7 @@ color: var(--Gray );
 .about {
   text-align: center;
   padding: 1rem 15rem 5rem 15rem;
+  font-size: var(--body);
   color: var(--Gray);
 }
 
@@ -95,12 +96,32 @@ color: var(--Gray );
   align-items: center;
 }
 
-.exp {
-  display: flex;  
-  justify-content: space-around;
+.grip {
+  font-size: var(--body);
+  color: var(--white);
+  display: grid;
+  grid-template-columns: 45rem 30rem;
+  grid-template-rows: 15rem 10rem;
+  align-items: end;
+  padding-left: 45rem;
+}
+
+.years {
+  color: var(--Gray);   
+}
+
+.portfolio img {
+  display: flex;
   align-items: center;
-  padding-right: 25rem;
-  color: var(--Gray);
+  align-content: space-around;
+  float: left;
+  width: 25%;
+  height: 20rem;
+  padding: 1rem 3rem 3rem 3rem;
+}
+
+.portfolio {
+  padding-left: 15rem;
 }
 
 /* PUNTERO */
