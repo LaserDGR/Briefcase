@@ -1,0 +1,143 @@
+
+:root {
+/* Custom Properties */
+--Dark:  #020403;
+--Gray:#ADADAD;
+--White:#FFFFFF;
+--title: 15rem;
+--subtitle: 5rem;
+--subsection: 4.5rem;
+--body: 1.8rem;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--Dark);
+  font-family: "Rubik", sans-serif;
+  font-size: 1.8rem;
+  color:var(--White)
+}
+
+h1 {
+  font-size: 75px;
+  text-align: center;
+}
+
+h2 {
+ font-size: var(--subtitle);
+ text-align: center;
+}
+
+h4 {
+  font-size: var(--body);
+  text-align: center;
+  color: var(--White);
+}
+
+h5 {
+font-size: var(--body);
+text-align: center;
+color: var(--Gray);
+}
+
+header {
+  font-size: 1.5rem;
+  text-align: right;
+  padding: 4rem;
+}
+
+.main-nav a{
+text-decoration: none;
+color: var(--White);
+padding: 2.5rem;
+}
+
+.hi h2 {
+color: var(--Gray );
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 85rem;
+  padding-right: 85rem;
+}
+
+.about {
+  text-align: center;
+  padding: 1rem 15rem 5rem 15rem;
+  color: var(--Gray);
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(4,2fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.icons {
+  width: 9rem ;
+  height: 9rem;
+  background: #3a3a3aef;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.exp {
+  display: flex;  
+  justify-content: space-around;
+  align-items: center;
+  padding-right: 25rem;
+  color: var(--Gray);
+}
+
+/* PUNTERO */
+.cont-padre {
+  background-color: var(--Dark);
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.puntero {
+  border-top: 3px solid var(--White);
+  border-bottom: 3px solid var(--White);
+  border-left: 3px solid var(--Gray);
+  border-right: 3px solid var(--Gray);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 49;
+  animation: girar 0.8s infinite linear;
+}
+
+.puntero2 {
+  border-top: 3px solid gray;
+  border-bottom: 3px solid gray;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+  width: 80%;
+  height: 80%;
+  margin: 5%;
+  border-radius: 100px;
+}
+
+@keyframes girar {
+  from{
+    transform: rotate(0deg);
+  }to{
+    transform: rotate(360deg);
+  }
+}
