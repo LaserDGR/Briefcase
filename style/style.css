@@ -54,6 +54,7 @@ header {
 text-decoration: none;
 color: var(--White);
 padding: 2.5rem;
+z-index: 52;
 }
 
 .hi h2 {
@@ -80,31 +81,37 @@ color: var(--Gray );
 }
 
 .skills {
+  float: center;
   display: grid;
-  grid-template-columns: repeat(4,2fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
+  grid-template-columns: 10rem 10rem;
+  grid-template-rows: 10rem 10rem;
+  column-gap: 25rem;
+  row-gap: 10rem;
+  place-content: center;
+  text-align: center;
+  padding-bottom: 5rem;
 }
 
-.icons {
-  width: 9rem ;
-  height: 9rem;
-  background: #3a3a3aef;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.icons img {
+  padding-bottom: 1rem;
+  margin-bottom: 0;
 }
+
+.icons2 img {
+  margin-top: -1rem;
+}
+
 
 .grip {
   font-size: var(--body);
   color: var(--white);
   display: grid;
-  grid-template-columns: 45rem 30rem;
+  grid-template-columns: 35rem 20rem;
   grid-template-rows: 15rem 10rem;
   align-items: end;
-  padding-left: 10rem;
+  padding-left: 25rem;
 }
+
 
 .years {
   color: var(--Gray);   
@@ -116,12 +123,30 @@ color: var(--Gray );
   align-content: space-around;
   float: left;
   width: 25%;
-  height: 25rem;
-  padding: 1rem 5rem 5rem 5rem;
+  height: 20rem;
+  padding: 1rem 3rem 3rem 3rem;
 }
 
 .portfolio {
   padding-left: 15rem;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 25rem 25rem;
+  grid-template-rows: 2rem 2rem;
+  place-content: center;
+  text-align: center;
+  row-gap: 3rem;
+  font-size: var(--gray);
+  color: var(--gray);
+  padding-bottom: 5rem;
+}
+
+.footer img {
+  background-color: var(--gray);
+
+  border-radius: 50%;
 }
 
 /* PUNTERO */
@@ -234,5 +259,3 @@ i.fa
     transform: scale(1.2);
     box-shadow: 0 30px 45px -15px rgba(0,111,255,0.6);
 }
-
-    
