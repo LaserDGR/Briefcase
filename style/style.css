@@ -164,6 +164,32 @@ a {
   padding-left: 5rem;
 }
 
+.portfolio .circle1 {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid var(--gray);
+  width: 15rem;
+  height: 15rem;
+  margin-left: -15rem;
+  margin-top: -5rem;
+}
+.portfolio .circle2 {
+  position: relative;
+  border-radius: 50%;
+  border: 1px solid var(--gray);
+  width: 13rem;
+  height: 13rem;
+  margin: 1rem;
+}
+.portfolio .circle3 {
+  position: relative;
+  border-radius: 50%;
+  border: 1px solid var(--gray);
+  width: 11rem;
+  height: 11rem;
+  margin: 0.8rem;
+}
+
 .footer {
   display: grid;
   grid-template-columns: 25rem 25rem;
